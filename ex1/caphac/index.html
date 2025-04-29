@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reCAPTCHA Exemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .g-recaptcha {
+            margin: 20px 0;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Verifique se você não é um robô</h2>
+        <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="SUA_CHAVE_DO_SITE"></div>
+        <button onclick="verificarCaptcha()">Verificar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function verificarCaptcha() {
+            var resposta = grecaptcha.getResponse();
+            if (resposta.length == 0) {
+                document.getElementById('resultado').textContent = "Por favor, complete o reCAPTCHA.";
+            } else {
+                document.getElementById('resultado').textContent = "reCAPTCHA verificado com sucesso!";
+            }
+        }
+    </script>
+</body>
+</html>

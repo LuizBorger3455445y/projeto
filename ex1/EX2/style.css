@@ -1,0 +1,10 @@
+.carnica a {
+    text-decoration: none;
+    color: rgb(208, 255, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carnica a:hover {
+    color: rgb(87, 216, 75);
+}
