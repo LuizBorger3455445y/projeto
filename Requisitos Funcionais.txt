@@ -1,0 +1,40 @@
+Requisitos Funcionais
+
+O sistema deve permitir o cadastro de tarefas com descrição textual.
+O sistema deve exibir a data e hora da criação de cada tarefa no formato local (pt-BR).
+As tarefas devem ser exibidas em ordem alfabética ou cronológica, com prioridade para tarefas pendentes.
+O sistema deve permitir ao usuário editar o texto da tarefa enquanto ela estiver pendente.
+O sistema deve permitir ao usuário marcar tarefas como concluídas com um botão de checkbox visual.
+O sistema deve permitir exclusão permanente de tarefas sem confirmação (ação irreversível).
+O sistema deve apresentar filtros de visualização por status: "Todas", "Pendentes" e "Concluídas".
+O sistema deve permitir persistência local dos dados (armazenamento mesmo após fechar o navegador).
+O botão de adicionar tarefa deve apresentar feedback visual (animação) ao ser clicado.
+O sistema deve prevenir criação excessiva de tarefas, exibindo mensagem de bloqueio quando o limite for atingido.
+O sistema deve estar completamente em português (pt-BR), inclusive mensagens, placeholders e textos auxiliares.
+O sistema deve desativar campos e botões de tarefas concluídas para evitar edição acidental.
+
+
+
+Requisitos Não Funcionais
+
+Cada tarefa deve ser carregada em menos de 1 segundo, mesmo com dezenas de registros salvos.
+O sistema deve funcionar offline e online, usando localStorage para armazenar dados localmente.
+O sistema deve ser compatível com:
+Navegadores em PCs (Windows, Linux, macOS)
+Navegadores em dispositivos Android
+O sistema deve possuir interface responsiva, adaptando-se a diferentes resoluções de tela.
+O sistema não deve depender de conexão com banco de dados externo.
+O sistema deve utilizar ícones visuais (SVG) para facilitar a usabilidade (ex: check, lixeira, adicionar).
+O código deve ser modular, comentado e legível, facilitando manutenção futura.
+O sistema deve preservar as tarefas armazenadas por tempo indefinido, exceto se o usuário apagar manualmente.
+O sistema deve ter baixo consumo de memória e processamento, adequado para dispositivos com recursos limitados.
+
+
+
+
+Modelo de negócio:
+
+Freemium
+
+Aplicativo no modo gratuito possui limitações de Tarefas;
+Agora no modo pago é possível criar quantas Tarefas desejar.
