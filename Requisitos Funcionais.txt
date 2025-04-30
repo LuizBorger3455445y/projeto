@@ -1,6 +1,6 @@
 Requisitos Funcionais
 
-O sistema deve permitir o cadastro de tarefas com descrição textual e numeral.
+O sistema deve permitir o cadastro de tarefas com descrição textual.
 O sistema deve exibir a data e hora da criação de cada tarefa no formato local (pt-BR).
 As tarefas devem ser exibidas em ordem alfabética ou cronológica, com prioridade para tarefas pendentes.
 O sistema deve permitir ao usuário editar o texto da tarefa enquanto ela estiver pendente.
@@ -9,7 +9,8 @@ O sistema deve permitir exclusão permanente de tarefas sem confirmação (açã
 O sistema deve apresentar filtros de visualização por status: "Todas", "Pendentes" e "Concluídas".
 O sistema deve permitir persistência local dos dados (armazenamento mesmo após fechar o navegador).
 O botão de adicionar tarefa deve apresentar feedback visual (animação) ao ser clicado.
-O sistema deve prevenir criação excessiva de tarefas, exibindo mensagem de bloqueio quando o limite for atingido.
+O sistema deve prevenir criação excessiva de tarefas, exibindo mensagem de bloqueio quando o limite for atingido caso modelo for gratuito
+O sistema deve permitir a criação ilimitada de tarefas se for modelo pago
 O sistema deve estar completamente em português (pt-BR), inclusive mensagens, placeholders e textos auxiliares.
 O sistema deve desativar campos e botões de tarefas concluídas para evitar edição acidental.
 
